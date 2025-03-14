@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Expressions</title>
+    <script>
+        var input1 = prompt("Enter your first name: ");
+        var input2 = prompt("Enter your last name: ");
+
+        var userName = alert("Welcome, " + input1 + " " + input2);
+        var userName = ("Welcome, " + input1 + " " + input2);
+    </script>
+</head>
+<body>
+    <h1 id="header"></h1>
+
+    <script>
+        document.getElementById('header').innerHTML = userName;
+    </script>
+</body>
+</html>
