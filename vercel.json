@@ -1,12 +1,10 @@
 {
   "rewrites": [
-    // Don't rewrite API and framework/static paths; let them be served as files or serverless functions
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/_next/(.*)", "destination": "/_next/$1" },
     { "source": "/static/(.*)", "destination": "/static/$1" },
     { "source": "/assets/(.*)", "destination": "/assets/$1" },
-
-    // All other routes should return index.html so the SPA router can handle them
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+
